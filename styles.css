@@ -90,7 +90,7 @@ h3 { font-size: 16px; font-weight: 700; }
   border: 1px solid var(--line); background: var(--card); color: var(--ink);
   font-weight: 600; font-size: 15px; cursor: pointer; text-decoration: none;
   transition: transform .08s ease, background .15s ease, border-color .15s ease;
-  user-select: none;
+  user-select: none; white-space: nowrap;
 }
 .btn:active { transform: scale(.97); }
 .btn svg { flex: none; }
@@ -105,7 +105,7 @@ h3 { font-size: 16px; font-weight: 700; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ---------- Auctions list ---------- */
-.home-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin: 6px 2px 18px; }
+.home-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px; margin: 6px 2px 18px; }
 .home-head p { margin: 6px 0 0; }
 .auction-list { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 .auction {
